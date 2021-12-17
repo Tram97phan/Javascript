@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    height: 200px;
+    background-color: rgb(161, 121, 72);
+    position: relative;
+    padding: 30px;
+}
+header h1, h2 {
+    text-align: center;
+    color: white;
+    
+}
+.triangle-down {
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid rgb(161, 121, 72);
+    position: absolute;
+    left: 30%;
+}
+.section-1 .content {
+width: 500px;
+height: 200px;
+border: 3px gray dotted;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 10px;
+font-size: 1.5em;
+
+}
+.section-2 {
+   width: 70%;
+   height: auto;
+    /* background-color: yellow; */
+    float: left;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    font-size: 1.25em;
+}
+aside {
+    width: 30%;
+    height: auto;
+    /* background-color: violet; */
+    float: left;
+    padding-right: 100px ;
+    font-size: 1.25em;
+}
+table tr, th, td {
+    text-align: left;
+}
+
+th {
+    padding-right: 40px;
+}
+.section-2 .content-1 {
+    padding-left: 30px;
+}
+.bar-content-1 {
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+}
+img {
+    width: 150px;
+    height: auto;
+}
+.bar-content-2 {
+    text-align: center;
+    padding: 0px 10px;
+}
+input {
+    width: 100%;
+
+}
+
+.bar-content-3 {
+    padding: 0px 10px;
+    text-align: center;
+}
+button {
+    margin-top: 30px;
+    
+}
+.bar-content-4 {
+    padding: 0px 10px;
+}
+.mail, .phone {
+    background-color: gray;
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+}
