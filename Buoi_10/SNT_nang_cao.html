@@ -11,5 +11,23 @@
 </body>
 </html>
 <script>
-    let number
+    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên"));
+    let count = 0; //Đếm số ước của số đang xét
+    let countSNT = 0; //Đếm xem đã tìm được bao nhiêu số nguyên tố rồi
+    for (let i = 2; i < 1000; i++) { 
+        if (countSNT < number) {     //Nếu số lượng số nguyên tố in ra < số lượng yêu cầu thì chia i lần lượt từ 1 đến chính nó
+            for (let j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count += 1;
+                }
+            }
+            if (count == 2) {
+                document.write(i + "<br>");
+                countSNT += 1;
+            }
+            count = 0;
+        } else {
+            break;
+        }
+    }
 </script>
