@@ -7,14 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Bảng cửu chương</h1>
 </body>
 </html>
 <script>
-    for (let j = 1; j <= 9; j++) {
+    let sout, i, j;
+    sout = "<table border='1' width= '1200' cellspacing='0' cellpadding='15'>";
+    debugger;
+    for (let j = 1; j <= 10; j++) {
+        sout = sout + "<tr>";
         for (let i = 1; i <= 10; i++) {
-            document.write(j + " * " + i + " = " + (j * i) + ("</br>"));
+            sout = sout + "<td>" + j + " * " + i + " = " + (j * i) + "</td>";
         }
+        sout = sout + "</tr>"
+    }
+    sout = sout + "</table>";
+    document.write(sout);
  
     
     // for (let i = 1; i <= 10; i++) {
@@ -29,5 +37,5 @@
     // for (let i = 1; i <= 10; i++) {
     //     document.write("5 * " + i + " = " + (5 * i) + ("</br>"));
     // }
-    }
+    
 </script>
